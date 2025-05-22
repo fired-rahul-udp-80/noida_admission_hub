@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Clg Services App
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noida College Admission Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+     <!-- <link rel="stylesheet" href="animate.css"> -->
+</head>
+
+<body class="light font-sans">
+     
+    <nav class="sticky top-0 bg-blue-600 dark:bg-gray-800 text-white p-4 shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl md:text-4xl font-extrabold text-center gradient-3d">
+                ~ Noida Admission Hub ~
+            </div>
+    
+            <!-- Hamburger Button (Mobile) -->
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+    
+            <!-- Nav Menu -->
+            <ul id="nav-menu" class="hidden text-xl font-semibold md:flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 absolute md:static top-16 left-0 w-full md:w-auto bg-blue-600 dark:bg-gray-800 px-6 py-4 md:p-0 z-40">
+                <li><a href="#home" class="nav-btn block hover:underline">Home</a></li>
+                <li><a href="#colleges" class="nav-btn block hover:underline">Colleges</a></li>
+                <li><a href="#counselors" class="nav-btn block hover:underline">Counselors</a></li>
+                <li><a href="#contact" class="nav-btn block hover:underline">Contact</a></li>
+            </ul>
+    
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="ml-4 btn-3d btn-blue focus:outline-none">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <section id="home" class="slider">
+        <div class="slide active" style="background-image: url('https://media.collegedekho.com/media/img/institute/crawled_images/None/Lloyd_infea2.png'); background-repeat: no-repeat; background-position:center; background-size:cover; ">
+            <div class="bg-black bg-opacity-50 h-full flex items-center justify-center flex-col gap-y-12">
+                <div class="text-center  ">
+                    <h1 class="text-4xl gradient-3d md:text-6xl font-bold mb-4 gradient-text highlight-animation">
+                        Your Path to Top Noida Colleges
+                      </h1>
+                    <p class="text-lg md:text-xl font-medium tracking-wide animate-pulse text-white/90">
+                        Unlock your future with real student mentors, trusted guidance, and insider tips to get into the best colleges in Noida.
+                    </p>
+                </div>
+                <div class="btn-pink">
+                    <a href="#counselors" class="block" >Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide bg-cover bg-center" style="background-image: url('https://marquecareer.com/wp-content/uploads/2023/08/niu.jpg'); background-repeat: no-repeat;">
+            <div class="bg-black bg-opacity-50 h-full flex items-center justify-center flex-col gap-y-12">
+                <div class="text-center  ">
+                    <h1 class="text-4xl gradient-3d md:text-6xl font-bold mb-4 gradient-text highlight-animation">
+                        Discover Your Dream College
+                      </h1>
+                    <p class="text-lg md:text-xl font-medium tracking-wide animate-pulse text-white/90">
+                        Get personalized admission support, one-on-one counseling, and all the guidance you need from real students who care.
+                    </p>
+                    
+                </div>
+                <div class="btn-pink">
+                    <a href="#counselors" class="block">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide active bg-cover bg-center" style="background-image: url('https://media.getmyuni.com/azure/college-images-test/galgotias-university-noida/dbac499153f547d5b103da1cddce775b.jpeg');">
+            <div class="bg-black bg-opacity-50 h-full flex items-center justify-center flex-col gap-y-12">
+                <div class="text-center text-white">
+                    <h1 class="text-4xl gradient-3d md:text-6xl font-bold mb-4 gradient-text highlight-animation">
+                        Your Path to Top Noida Colleges
+                      </h1>
+                    <p class="text-lg md:text-xl font-medium tracking-wide animate-pulse text-white/90">
+                        Unlock your future with real student mentors, trusted guidance, and insider tips to get into the best colleges in Noida.
+                    </p>
+                </div>
+                <div class="btn-pink">
+                    <a href="#counselors" class="block" >Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="fixed flex flex-col items-center gap-y-3 top-[40%]  right-0 bg-gray-300  text-green-500 text-4xl md:text-5xl px-2 py-8 z-20 animate-pulse">
+            <div>
+                <i class="open-form-btn fa-regular fa-paper-plane text-blue-500  cursor-pointer"></i>
+            </div>
+            <a href="">
+                <i class="fa-brands fa-whatsapp "></i>
+            </a>
+            
+            
+        </div>
+         <div class="form-container animate__animated animate__fadeInDownBig w-full max-w-md shadow-2xl fixed top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 hidden">
+            <div class="form-overlay">
+                <h2 class="text-2xl font-serif font-bold text-white text-center mb-6">Registration Form</h2>
+                <i class=" form-cut fa-solid fa-xmark fixed top-5 right-5 bg-gray-800 p-3 cursor-pointer rounded-md"></i>
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <input type="hidden" name="access_key" value="15d220f8-05e6-482c-82b6-338db7ddf1e3">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-100">Name</label>
+                        <input type="text" name="name" required
+                            class="mt-1 block w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 sm:text-sm transition duration-200 bg-gray-50 text-gray-800 placeholder-gray-500"
+                            placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="phone"  class="block text-sm font-medium text-gray-100">Phone Number</label>
+                        <input type="number" name="number" required
+                            class="mt-1 block w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 sm:text-sm transition duration-200 bg-gray-50 text-gray-800 placeholder-gray-500"
+                            placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label for="course" class="block text-sm font-medium text-gray-100">Course</label>
+                        <input type="text" name="course" required
+                            class="mt-1 block w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 sm:text-sm transition duration-200 bg-gray-50 text-gray-800 placeholder-gray-500"
+                            placeholder="Write your course name">
+                    </div>
+                    <div class="flex items-center justify-center">
+                       <button type="submit" class=" w-contain inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                                Submit
+                                </span>
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- College Info -->
+    <section id="colleges" class="wow fadeInUp py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-6xl font-bold text-center mb-16">Top Colleges in Noida</h2>
+            <div id="college-container" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Counselor Info -->
+    <section id="counselors" class="py-16 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-6xl font-bold text-center mb-16">Meet Our Counselors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="counselor-card counselor-card-hover-emerald bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+                    <div class="counselor-card-inner flex flex-col gap-y-2">
+                        <img src="https://api.dicebear.com/5.x/initials/svg?seed= Rahul Kumar" alt="Counselor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-2xl font-semibold mb-2">Rahul Kumar</h3>
+                        <p class="mb-4">A college student offering real guidance for smooth admission processes.</p>
+                        <div onclick={openModal()} class="cursor-pointer  btn-neon-emerald">
+                            <button  class="btn-neon">Contact Rahul Kumar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="counselor-card counselor-card-hover-rose bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+                    <div class="counselor-card-inner flex flex-col gap-y-2">
+                        <img src="https://api.dicebear.com/5.x/initials/svg?seed= Om Kumar" alt="Counselor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-2xl font-semibold mb-2">Om Kumar</h3>
+                        <p class="mb-4">A genuine student helping peers with real insights into college admissions.</p>
+                        <div onclick={openModal()} class="cursor-pointer  btn-neon-rose w-contain">
+                            <button  class="btn-neon">Contact Om Kumar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4  ">
+            <h2 class=" text-3xl md:text-6xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="contact-card text-white ">
+                <p><i class="fas fa-phone"></i> +91 8376937536</p>
+                <p><i class="fas fa-envelope"></i> developerrahul977@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sector 62, Noida, Uttar Pradesh</p>
+                <div class="mt-12 text-center">
+                    <a href="mailto:info@noidaadmissionhub.com" class="btn-3d btn-blue">Send Us a Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+<div id="callModal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm">
+
+<div class="relative p-1 rounded-2xl bg-transparent">
+    <!-- Rotating Border -->
+    <div
+      class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-cyan-400 via-pink-500 to-cyan-400 animate-spin-slow blur-sm">
+    </div>
+
+    <!-- Modal Content -->
+    <div class="relative bg-gray-800 text-white p-8 rounded-2xl shadow-xl min-w-[300px] z-10 text-center">
+      <h2 class="text-2xl font-semibold mb-6">Need Help?</h2>
+      <p class="mb-6 text-gray-300">Call us now or cancel to close.</p>
+
+      <div class="flex justify-center gap-4">
+        <a href="tel:9876543210"
+          class="bg-cyan-400 text-black font-medium px-5 py-2 rounded-lg hover:bg-cyan-300 transition"
+          onclick="return isMobile() || (alert('Please use a mobile device to call'), false)"
+           >
+          Call Now
+        </a>
+        <a href="tel:9876543210"
+          class="bg-cyan-400 text-black font-medium px-5 py-2 rounded-lg hover:bg-cyan-300 transition"
+          onclick="return isMobile() || (alert('Please use a mobile device to call'), false)"
+           >
+          Call Now
+        </a>
+        <button
+          class="bg-gray-700 text-white font-medium px-5 py-2 rounded-lg hover:bg-gray-600 transition"
+          onclick="closeModal()">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-blue-600 dark:bg-gray-800 text-white text-center font-medium p-4">
+        <p>© 2025 Noida Admission Hub. All rights reserved || Designer : Rahul Kumar</p>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            body.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+             
+        });
+        // form
+        const formCut = document.querySelector('.form-cut');
+        const formContainer = document.querySelector('.form-container');
+        formCut.addEventListener('click', () => {
+            formContainer.classList.toggle('hidden');
+        });
+        const openFormBtn = document.querySelector('.open-form-btn');
+        openFormBtn.addEventListener('click', () => {
+            formContainer.classList.remove('hidden');
+        });
+        setTimeout(() => {
+            formContainer.classList.remove('hidden');
+        }, 1000); // Show after 10 seconds
+        // Hide after 10 seconds
+        // Hamburger Menu
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const navMenu = document.getElementById("nav-menu");
+         
+         // Toggle the menu on button click
+        hamburgerBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+        });
+        
+        // Slider
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        showSlide(currentSlide);
+        // Modal Functionality
+        const modal = document.getElementById("callModal");
+         
+        function openModal() {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        }
+
+        function closeModal() {
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+        }
+
+        function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        // College Data Array
+        const colleges = [
+            {
+                name: "Noida International University",
+                description: "Global programs in engineering, management, and more.",
+                icon: "fa-university",
+                hoverClass: "card-hover-neon-blue",
+                iconColor: "text-blue-600 dark:text-blue-400",
+               
+            },
+            {
+                name: "Galgotias College",
+                description: "Top private college with strong placements.",
+                icon: "fa-graduation-cap",
+                hoverClass: "card-hover-pulse-red",
+                iconColor: "text-red-600 dark:text-red-400",
+                
+            },
+            {
+                name: "Galgotias College of Engineering & Technology (GCET)",
+                description: "Premier engineering institute with modern facilities.",
+                icon: "fa-laptop-code",
+                hoverClass: "card-hover-spin-green",
+                iconColor: "text-green-600 dark:text-green-400",
+                
+            },
+            {
+                name: "IIMT College of Engineering",
+                description: "Quality education with strong placement support.",
+                icon: "fa-book-open",
+                hoverClass: "card-hover-slide-purple",
+                iconColor: "text-purple-600 dark:text-purple-400",
+               
+            },
+            {
+                name: "Noida Institute of Engineering & Technology (NIET)",
+                description: "Top B.Tech college with excellent faculty.",
+                icon: "fa-microchip",
+                hoverClass: "card-hover-glow-yellow",
+                iconColor: "text-yellow-600 dark:text-yellow-400",
+               
+            },
+            {
+                name: "Greater Noida Institute of Technology (GNIOT)",
+                description: "Leading engineering college with top programs.",
+                icon: "fa-building",
+                hoverClass: "card-hover-bounce-orange",
+                iconColor: "text-orange-600 dark:text-orange-400",
+                
+            },
+            {
+                name: "Dronacharya Group of Institutions",
+                description: "Excellence in engineering and industry training.",
+                icon: "fa-cogs",
+                hoverClass: "card-hover-flip-teal",
+                iconColor: "text-teal-600 dark:text-teal-400",
+                hasFlip: true,
+                
+            },
+            {
+                name: "IILM Academy of Higher Learning",
+                description: "Engineering, management, and liberal arts.",
+                icon: "fa-chalkboard-teacher",
+                hoverClass: "card-hover-scale-pink",
+                iconColor: "text-pink-600 dark:text-pink-400",
+                
+            },
+            {
+                name: "ITS Engineering College",
+                description: "Quality education with modern labs.",
+                icon: "fa-flask",
+                hoverClass: "card-hover-tilt-cyan",
+                iconColor: "text-cyan-600 dark:text-cyan-400",
+               
+            },
+            {
+                name: "KCC Institute of Technology and Management",
+                description: "B.Tech, MBA, and MCA with industry exposure.",
+                icon: "fa-desktop",
+                hoverClass: "card-hover-reveal-indigo",
+                iconColor: "text-indigo-600 dark:text-indigo-400",
+               
+            },
+            {
+                name: "Lloyd Law College",
+                description: "Practical legal education with global standards.",
+                icon: "fa-gavel",
+                hoverClass: "card-hover-zoom-lime",
+                iconColor: "text-lime-600 dark:text-lime-400",
+               
+            },
+            {
+                name: "Mangalmay Institute of Engineering and Technology",
+                description: "Industry-equipped training on a 13-acre campus.",
+                icon: "fa-leaf",
+                hoverClass: "card-hover-shadow-amber",
+                iconColor: "text-amber-600 dark:text-amber-400",
+               
+            }
+        ];
+
+        // Dynamically Generate College Cards
+        const collegeContainer = document.getElementById('college-container');
+        colleges.forEach(college => {
+            const card = document.createElement('div');
+            card.className = `card ${college.hoverClass} bg-white dark:bg-gray-700 flex flex-col gap-y-4 text-xl p-6 rounded-lg shadow-lg text-center`;
+            card.innerHTML = college.hasFlip
+                ? `
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas ${college.icon} card-icon ${college.iconColor}"></i>
+                            <h3 class="text-2xl text-blue-500 font-semibold text-blue-500 mb-2">${college.name} </h3>
+                            <p class="mb-4">${college.description}</p>
+                            <div>
+                            <button onclick={openModal()} class="relative w-contain inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                                Call To
+                                </span>
+                            </button>
+                            </div>
+
+
+                        </div>
+                        <div class="card-back p-6">
+                            <p>Explore ${college.name}'s innovative programs.</p>
+                        </div>
+                    </div>
+                `
+                : `
+                    <i class="fas ${college.icon} card-icon ${college.iconColor}"></i>
+                    <h3 class="text-2xl text-blue-500 font-semibold mb-2">${college.name}</h3>
+                    <p class="mb-4">${college.description}</p>
+                    <div>
+                        <button onclick={openModal()} class="relative w-contain inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                            <span class="relative px-14 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                            Call To
+                            </span>
+                        </button>
+                    </div>
+                `;
+            collegeContainer.appendChild(card);
+        });
+    </script>
+      
+</body>
+</html>
