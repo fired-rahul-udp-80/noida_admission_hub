@@ -67,8 +67,39 @@
             animation: spin-slow 5s linear infinite;
           }
         .dark {
-            background-color: #1E201E;
-            color: #e2e8f0;
+            background-color: white
+            /* background-color: #1E201E; */
+            /* color: #e2e8f0; */
+            color:black;
+            .card {
+                background-color: #1E201E;
+                color : white;
+            }
+            .counselor-card{
+                background-color: #1E201E;
+                color : white;
+            }
+            #counselors{
+               background-color: black;
+               color : white;  
+            }
+             
+            .contact-card{
+                background-color: #1E201E;
+                color : white;
+            }
+            footer{
+                background-color: #1E201E;
+                color : white;
+            }
+            nav{
+                background-color: #1E201E;
+                color : white;
+            }
+            nav ul{
+                background-color: #1E201E;
+                color : white;
+            }        
         }
         .light{
             background-color:#1a202c;
